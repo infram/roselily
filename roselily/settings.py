@@ -25,7 +25,7 @@ SECRET_KEY = '2^nd5%+2(a*l6kjs#0$*)-2ln*2=#)t92t1pxn#09n-+lc7bt4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://roselilyfrt.herokuapp.com']
+ALLOWED_HOSTS = ['roselilyfrt.herokuapp.com']
 
 
 # Application definition
