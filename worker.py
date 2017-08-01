@@ -39,7 +39,7 @@ def fetch_data():
 
         cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        cur.execute("""INSERT INTO mvwebapp_reading(location, weather, wind_str, temp, humidity, percip, icon_url, observation_time)
+        cur.execute("""INSERT INTO roseapp_reading(location, weather, wind_str, temp, humidity, percip, icon_url, observation_time)
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s)""",(location, weather, wind_str, temp, humidity, percip, icon_url, observation_time))
 
         conn.commit()
