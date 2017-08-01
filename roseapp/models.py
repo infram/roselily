@@ -119,3 +119,15 @@ class opackingsize(models.Model):
     ozproduct_code = models.CharField(max_length=100)
     oz_update_user = models.CharField(max_length=100)
     oz_update_date = models.DateTimeField(default=datetime.now)
+
+
+
+class Reading(models.Model):
+    location = models.CharField(max_length =100 )
+    weather = models.CharField(max_length =20 )
+    wind_str = models.CharField(max_length =100 )
+    temp = models.IntegerField()
+    humidity = models.CharField(max_length =10)
+    percip = models.CharField(max_length =50 )
+    icon_url = models.CharField(max_length =100 )
+    observation_time = models.CharField(max_length =100 )

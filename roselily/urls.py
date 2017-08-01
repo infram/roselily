@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+import roseapp.views
+
 
 urlpatterns = [
+    url(r'^$',roseapp.views.home, name = 'home'),
     url(r'^admin/', admin.site.urls),
 ]

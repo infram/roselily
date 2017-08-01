@@ -1,6 +1,17 @@
+certifi==2017.7.27.1
+chardet==3.0.4
 dj-database-url==0.4.2
 Django==1.11.3
+get==0.0.21
 gunicorn==19.7.1
+idna==2.5
+post==0.0.13
 psycopg2==2.7.3
+public==0.0.38
 pytz==2017.2
+query-string==0.0.12
+request==0.0.13
+requests==2.18.2
+setupfiles==0.0.50
+urllib3==1.22
 whitenoise==3.3.0
