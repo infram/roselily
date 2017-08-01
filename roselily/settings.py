@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'roselily.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'weather',
-        'USER': 'web1',
-        'PASSWORD': 'welcome@786',
-        'HOST': '',
-        'PORT':'',
+        'NAME': 'daaet229tjvhkr',
+        'USER': 'zbnyfewkdmcwqm',
+        'PASSWORD': 'e2c87a8c7d9fb24e62a1fd73630aed732436396c0e85a69ff5d978d19d6c2fa4',
+        'HOST': 'ec2-107-21-109-15.compute-1.amazonaws.com',
+        'PORT':'5432',
 
     }
 }
