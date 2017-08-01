@@ -1,1 +1,1 @@
-web: gunicorn weblist.wsgi --log-file -
+web: gunicorn roselily.wsgi --log-file -
