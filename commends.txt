@@ -3,4 +3,8 @@ python manage.py migrate
 
 git commit -m "Commit message"
 git push origin master
-git
+
+
+git push heroku master
+
+
