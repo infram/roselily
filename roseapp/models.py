@@ -97,10 +97,23 @@ class Oproducts(models.Model):
         return self.pd_name
 
 
+
+
+
+class opackingsize(models.Model):
+    oproduct = models.ForeignKey(Oproducts, on_delete=models.CASCADE)
+    ozpacking = models.ForeignKey(Opacking, on_delete=models.CASCADE)
+    ozpacking_size = models.PositiveIntegerField(default=0)
+    ozpacking_unit = models.PositiveIntegerField(default=0)
+    ozproduct_code = models.CharField(max_length=100)
+    oz_update_user = models.CharField(max_length=100)
+    oz_update_date = models.DateTimeField(default=datetime.now)
+
+
 class Oshp_price(models.Model):
     oshop = models.ForeignKey(Oshop, on_delete=models.CASCADE, verbose_name="Shop")
     oproduct = models.ForeignKey(Oproducts, on_delete=models.CASCADE, verbose_name="Product")
-    oproduct_Packingszie = models.ForeignKey(opackingsize, on_delete=models.CASCADE, verbose_name="Packing")
+    oproduct_Packingszie = models.ForeignKey(opackingsize, on_delete=models.CASCADE,default=1, verbose_name="Packing" )
     oshop_price = models.PositiveIntegerField(default=0, verbose_name="Price")
     oprice_update_user = models.CharField(max_length=100)
     oprice_update_date = models.DateTimeField(default=datetime.now)
@@ -112,14 +125,7 @@ class Oshp_price(models.Model):
         return self.oshop_price
 
 
-class opackingsize(models.Model):
-    oproduct = models.ForeignKey(Oproducts, on_delete=models.CASCADE)
-    ozpacking = models.ForeignKey(Opacking, on_delete=models.CASCADE)
-    ozpacking_size = models.PositiveIntegerField(default=0)
-    ozpacking_unit = models.PositiveIntegerField(default=0)
-    ozproduct_code = models.CharField(max_length=100)
-    oz_update_user = models.CharField(max_length=100)
-    oz_update_date = models.DateTimeField(default=datetime.now)
+
 
 
 
