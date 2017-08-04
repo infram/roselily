@@ -108,7 +108,7 @@ class Oshp_price(models.Model):
         verbose_name = "Shop Price"
 
     def __str__(self):
-        return self.oshop_name
+        return self.oshop_price
 
 
 class opackingsize(models.Model):
